@@ -13,7 +13,9 @@ run_list(
 )
 
 override_attributes({
-	"phpmyadmin" => {
-		"home" => "/var/www/devbox.local/phpmyadmin/htdocs"
+	"php" => {
+		"directives" => {
+			"short_open_tag" => "on"
+		}
 	}
 })

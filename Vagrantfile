@@ -26,11 +26,6 @@ Vagrant::configure("2") do |config|
 	config.vm.hostname = "devbox.local"
 	config.vm.network :private_network, ip: "192.168.56.150"
 
-	# Update the box.
-	#config.vm.provision :shell, :inline => "apt-get update && apt-get upgrade -y"
-	# Install latest Chef
-	#config.vm.provision :shell, :inline => "apt-get install curl -y && curl -L https://www.opscode.com/chef/install.sh | sudo bash"
-
 	# Chef specific
 	config.vm.provision "chef_solo" do |chef|
 		chef.cookbooks_path = ["chef-repo/cookbooks", "chef-repo/site-cookbooks"]
@@ -39,6 +34,7 @@ Vagrant::configure("2") do |config|
 
 		chef.add_role "base"
 		chef.add_role "single_web"
+		chef.add_role "devbox"
 
 		chef.json = {
 			"mysql" => {
@@ -48,5 +44,4 @@ Vagrant::configure("2") do |config|
 			}
 		}
 	end
-
 end

@@ -6,6 +6,7 @@ run_list(
 	"recipe[chef-solo-search]",
 	"recipe[users::sysadmins]",
 	"recipe[vim]",
+	"recipe[git]",
 	"recipe[ntp]",
 	"recipe[openssh]",
 	"recipe[ssh_known_hosts]"
