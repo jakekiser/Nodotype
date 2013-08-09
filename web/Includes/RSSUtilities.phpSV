@@ -1,0 +1,32 @@
+<?
+class BuildRSSClass
+{
+public function BuildRSS() {
+    
+    $rss = new DOMDocument();
+    $rss->load('http://feeds.feedburner.com/twitter/digeapolis');    
+    
+    $feed = array();
+    foreach ($rss->getElementsByTagName('item') as $node) {
+	$item = array ( 
+            'title' => $node->getElementsByTagName('title')->item(0)->nodeValue,
+            'desc' => $node->getElementsByTagName('description')->item(0)->nodeValue,
+            'link' => $node->getElementsByTagName('link')->item(0)->nodeValue,
+            'date' => $node->getElementsByTagName('pubDate')->item(0)->nodeValue,
+        );
+        array_push($feed, $item);
+    }
+
+    $limit = 3;
+    for($x=0;$x<$limit;$x++) {
+	$title = str_replace(' & ', ' &amp; ', $feed[$x]['title']);
+	$link = $feed[$x]['link'];
+	$description = $feed[$x]['desc'];
+	$date = date('l F d, Y', strtotime($feed[$x]['date']));
+	echo '<div class="RSSRow">';
+        echo '<div class="RSSTitle" ><a target="_blank" href="'.$link.'" title="'.$title.'">'.$title.'</a></div>';
+	echo '<div class="RSSDate"> Posted on '.$date.'</div>';
+	echo '<div class="RSSDesc">'.$description.'</div>';
+        echo '</div>';
+    }
+}}

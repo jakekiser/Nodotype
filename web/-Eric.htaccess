@@ -1,0 +1,88 @@
+    # Mod Rewrite
+
+    RewriteEngine On
+    RewriteBase /
+
+
+    RewriteCond %{HTTP_HOST} !^$
+    RewriteCond %{HTTP_HOST} !^www\. [NC]
+    RewriteCond %{HTTPS}s ^on(s)|
+        RewriteRule ^ http%1://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+    #Search for Pageviews
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{HTTP_HOST} ^.*?digiapolis\.com$ [OR]
+    RewriteCond %{HTTP_HOST} ^.*?onexpage\.com$ [OR]
+    RewriteCond %{HTTP_HOST} ^.*?1xpg\.com$ 
+    RewriteCond %{QUERY_STRING} ^tnt=(\d+)&editmode=(\d+)$ [NC,OR]
+    RewriteCond %{QUERY_STRING} ^tnt=(\d+)$ [NC]
+       RewriteRule ^(.*?)$ index.php?p=$1&tnt=%1&EditMode=%2 [L]
+
+    #Search for Pageviews (Update Mode)
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{HTTP_HOST} ^.*?digiapolis\.com$ [OR]
+    RewriteCond %{HTTP_HOST} ^.*?onexpage\.com$ [OR]
+    RewriteCond %{HTTP_HOST} ^.*?1xpg\.com$ 
+    RewriteCond %{QUERY_STRING} ^tnt=(\d+)&editmode=(\d+)&m=([^&]+)$ [NC,OR]
+    RewriteCond %{QUERY_STRING} ^tnt=(\d+)&m=([^&]+)$ [NC,OR]
+    RewriteCond %{QUERY_STRING} ^tnt=(\d+)$ [NC]
+       RewriteRule ^(.*?)$ index.php?p=$1&tnt=%1&EditMode=%2&m=%3 [L]
+
+    #Looking for internal hash pages
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{HTTP_HOST} ^.*?idocampaigns\.com$ [NC]
+    RewriteCond %{REQUEST_URI} ^/About [NC,OR]
+    RewriteCond %{REQUEST_URI} ^/Services [NC,OR]
+    RewriteCond %{REQUEST_URI} ^/Contact [NC]
+        RewriteRule ^(.*?)$ http://www.idocampaigns.com\#$1 [L]
+
+    #Specific URL/Domain redirect
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{HTTP_HOST} ^.*?idocampaigns\.com$ 
+       RewriteRule ^(.*?)$ index.php?p=oxp&tnt=4&EditMode=0 [L]
+
+    #Specific URL/Domain redirect
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{HTTP_HOST} ^.*?completerepair\.co$ 
+       RewriteRule ^(.*?)$ index.php?p=oxp&tnt=27&EditMode=0 [L]
+
+    #Specific URL/Domain redirect
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{HTTP_HOST} ^.*?bakalaka\.com$
+       RewriteRule ^(.*?)$ index.php?p=oxp&tnt=5 [L]
+
+    #Search for page edits
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{HTTP_HOST} ^.*?digiapolis\.com$ [OR]
+    RewriteCond %{HTTP_HOST} ^.*?onexpage\.com$ [OR]
+    RewriteCond %{HTTP_HOST} ^.*?1xpg\.com$ 
+    RewriteCond %{QUERY_STRING} ^pid=(\d+)$ [NC,OR]
+    RewriteCond %{QUERY_STRING} ^pid=(\d+)&m=([^&]+)$
+       RewriteRule ^(.*?)$ index.php?p=$1&pid=%1&m=%2 [L]
+
+    #Looking for internal hash pages
+    #ResponsiveMarketing
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{HTTP_HOST} ^.*?digiapolis\.com$ [NC]
+    RewriteCond %{REQUEST_URI} ^/Interactive-Marketing [NC,OR]
+    RewriteCond %{REQUEST_URI} ^/Skills [NC,OR]
+    RewriteCond %{REQUEST_URI} ^/Web-Development [NC,OR]
+    RewriteCond %{REQUEST_URI} ^/Social-Business [NC]
+        RewriteRule ^(.*?)$ http://www.digiapolis.com\#$1 [L]
+
+    #Search for actual page by domain + xURL
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{HTTP_HOST} ^.*?1xpg\.com$
+       RewriteRule ^(.*?)$ index.php?p=oxp&XURL=$1 [L]
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{QUERY_STRING} ^tnt=(\d+)$ [NC,OR] 
+    RewriteCond %{QUERY_STRING} !^tnt=(\d+)$ 
+        RewriteRule (.*?)$ index.php?p=$1&tnt=%1 [L]

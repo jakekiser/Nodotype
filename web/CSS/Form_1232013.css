@@ -1,0 +1,53 @@
+.StdLabel {
+    padding: 0 0 5px;
+}
+.StdInput input, .StdInput textArea {
+  padding:10px;
+  border:0;
+  border-bottom:1px solid #999;
+  color:#000;
+  background-color:#f0f0f0;
+  font-size:.9em;
+  width:95%;
+}
+.StdInput input:hover, .StdInput textArea:hover, .StdInput input:focus, .StdInput textArea:focus {
+  box-shadow:10px 10px 20px #666;
+  background-color:#0098E8;
+  color:#fff;
+}
+.Action input {
+  padding:10px;
+  border-radius:10px;
+  width:100px;
+  background-color:#0098E8;
+  color:#fff;
+  border:0;
+  margin-left:30%;
+}
+.Action input:hover {
+  background-color:#ffa000;
+  color:#333;
+  box-shadow:10px 10px 20px #666;
+}
+#StdMsg {
+  background-image:url('/images/TransBlue_60Pct.png'); 
+  border: 1px solid #666666;
+  color: #FFFFFF;
+  font-size: 2.5em;
+  font-weight: 700;
+  left: 10%;
+  margin: 0 auto;
+  padding: 10px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 80%;
+  z-index: 2000000;
+}
+.FlowRow {
+    float:left;
+    margin-right:10px;
+}
+.formError {
+    border:1px solid red !important;
+}

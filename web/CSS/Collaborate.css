@@ -1,0 +1,511 @@
+.divHeadLine {
+  width:100%;
+}
+.divCollaborate .LeftPane, .divCollaborate .CenterPane, .divCollaborate .RightPane {
+  float:left;
+}
+
+.divCollaborate .LeftPane .PaneInner, .divCollaborate .CenterPane .PaneInner, .divCollaborate .RightPane .PaneInner{
+  padding:0 3%;
+}
+@media only screen 
+    and (max-device-width : 830px) 
+    and (orientation : landscape) {
+
+
+}
+.MainWall .MessageBox {
+  border:1px solid #ccc;
+  width:auto;
+  height:70px;
+  color:#333;
+}
+.MainWall .MessageBox textarea {
+  width:90%;
+  border:0;
+  padding:5px;
+  color:#333;
+}
+.MainWall .Options {
+  background-color: #666666;
+  font-size: 0.7em;
+  padding: 9px;
+  margin-bottom: 20px;
+  width:99%;
+}
+.MainWall .Options div {
+  float:left;
+  margin-right:30px;
+  color:#fff;
+}
+.MainWall .Functions div {
+  color: #999999;
+  cursor: pointer;
+  float: left;
+  font-weight: 700;
+  min-height: 40px;
+  padding: 10px 0;
+  text-align: center;
+  width: 33%;
+}
+.MainWall .Functions div div {
+  float:none;
+  width:auto;
+  text-align:center;
+  font-weight:700;
+  font-size:1.4em;
+}
+.MainWall .Functions .PostMessage,
+    .MainWall .Functions .PostFile,
+    .MainWall .Functions .PostPoll {
+  min-height: 20px;
+}
+.MainWall .Functions div:hover {
+  color:#000;
+}
+.CollaborateCenterPane .Action input {
+  right: 0;
+  position: absolute;
+}
+.CollaborateCenterPane  .StdRow.Footer.Action {
+  position: relative;
+  margin-bottom:100px;
+}
+.MainWall .StdRow.Footer.Action {
+  margin:20px 0 0;
+  height:30px;
+}
+.divWallRow {
+  border-bottom: 1px solid #CCCCCC;
+  min-height: 60px;
+  padding: 5px 5px 5px 45px;
+  position: relative;
+  margin-top: 10px;
+}
+.divWallRow:first-child {
+    margin-top:5px;
+}
+.divWRMainImage {
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+.divWRMainImage > img {
+  border-radius: 50% 50% 50% 50%;
+  height: 40px;
+  width: 40px;
+}
+.divWREntityImage {
+  left: 20px;
+  position: absolute;
+  top: 20px;
+}
+.divWREntityImage > img {
+  height: 20px;
+  width: 20px;
+}
+.divWREntityImage {
+  border: 3px solid #FFFFFF;
+}
+.divWallType_0 .divWREntityImage {
+    display:none;
+} 
+.divWRName, .divWRName2 {
+  font-weight: 700;
+  float:left;
+}
+.divWRMessage {
+  font-size: 0.9em;
+  font-weight: normal;
+  margin: 5px 0;
+}
+.divWRDate {
+  color: #999999;
+  font-size: 0.8em;
+  position: absolute;
+  right: 0;
+  text-align: right;
+}
+#MainWallMsgs {
+  margin-top: 20px;
+}
+.OptionalFunctions > div {
+  float: left;
+  font-size: 0.85em;
+  margin: 10px 5px 10px 0;
+  color: #666;
+}
+.OptionalFunctions > div:after {
+  content: "\2022";
+  padding-left: 5px;
+}
+.OptionalFunctions > div.divWRDate:after {
+  content: "";
+}
+.OptionalFunctions [class*="foundicon-"]:before {
+  font-family: "SocialFoundicons" !important;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+}
+.OptionalFunctions  div.Share:after {
+  content: "";
+}
+#MainWallMsgs .Delete, 
+    #CollabArea .Delete, 
+    #GroupMainWallMsgs .Delete  {
+  position: absolute;
+  right: 0;
+  cursor:pointer;
+}
+#MainWallMsgs .Delete img, 
+    #GroupMainWallMsgs .Delete img, 
+    #CollabArea .Delete img,
+    .xMenu .Delete img {
+  background-image: url("/images/Controls.png");
+  background-position: -30px -28px;
+  width: 30px;
+  height: 30px;
+}
+#MainWallMsgs .Delete:hover img, 
+    #GroupMainWallMsgs .Delete:hover img, 
+    #CollabArea .Delete:hover img, 
+    .xMenu .Delete:hover img {
+  background-position: -60px -28px;
+}
+.MainWall.NoEntry .MessageBox {
+  height:30px;
+}
+.MainWall.NoEntry .MessageBox textarea {
+  height:20px;
+}
+.MainWall .MessageBox {
+  height:70px;
+  background-color:#fff;
+}
+.MainWall .MessageBox textarea  {
+  height:60px;
+}
+
+.MainWall.NoEntry .Action {
+  display:none;
+}
+.MainWall .Selected {
+  background-color: #FFA100;
+  border-radius: 10px 10px 10px 10px;
+  color: #FFFFFF !important;
+  padding: 10px 0;
+}
+#formGroupEdit textarea {
+  border: 1px solid #CCCCCC;
+  border-radius: 5px 5px 5px 5px;
+  font-size: 0.9em;
+  padding: 8px;
+  width: 90%;
+  height:180px;
+}
+.StdRow.Footer.Action {
+  margin-bottom: 40px;
+}
+.divGroupRow {
+  padding-left: 40px !important;
+  position: relative;
+}
+.divGroupLogo {
+  height: 30px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 30px;
+}
+.divGroupLogo > img {
+  border-radius: 50% 50% 50% 50%;
+  height: 100%;
+  width: 100%;
+}
+.CenterPanes {
+  float: left;
+  width:794px;
+  overflow:hidden;
+}
+.CollaborateCenterPane {
+  overflow: hidden;
+  position: relative;
+}
+.PaneBigArea {
+  position: relative;
+}
+#divGroupContainer .GroupLogo {
+  left: 0;
+  position: absolute;
+  top: 0;
+  max-width:300px;
+}
+#divGroupContainer .GroupLogo > img {
+  width:100%;
+}
+#divGroupContainer .divGroupDescription {
+  padding-left: 320px;
+  position: relative;
+  border-bottom: 1px solid #ccc;
+  min-height: 225px;
+}
+.divGRInner {
+  position: relative;
+}
+.divGRInner .Edit {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.divGRInner .Edit > img {
+  background-image: url("/images/Controls.png");
+  background-position: -22px -33px;
+  background-size: 383% auto;
+  height: 20px;
+  width: 20px;
+}
+.divGRInner .Edit:hover > img {
+  background-position: 0 -33px;
+}
+.divGRName {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 83%;
+  text-overflow: ellipsis;
+  color:#999;
+  text-decoration:none;
+}
+.divGRName a, .divGRName a:visited {
+    color:#999;
+}
+.divGRName a:hover {
+    color:#222;
+}
+.GroupAbstract > h2 {
+    margin-bottom:20px;
+}
+.divGroupDescription .GroupAbstract {
+  color: #666666;
+  font-size: 0.9em;
+  line-height: 1.5em;
+}
+.GABS {
+  margin-bottom: 20px;
+  max-height: 200px;
+  overflow: auto;
+}
+ul#divGroupList {
+    margin-left: 7%;
+}
+.WallCenterPane .RightSide {
+  width:159px;
+  float:left;
+}
+.WallCenterPane .LeftSide {
+  width:635px;
+  float:left;
+}
+.CollaborateLeftPane h4 {
+    color:#ffa100;
+    font-weight:700;
+}
+.NoShow {
+    display:none;
+}
+#PostContainer {
+  margin-top: 10px;
+}
+#PostFile, #PostMessage, #PostPoll {
+    min-height:20px;
+}
+#PostFile .qq-upload-button {
+  width:335px;
+}
+#formEditProfile .qq-upload-button {
+  width:140px;
+}
+.PostContainer {
+  margin-top: 20px;
+}
+.MainWall {
+  background-color: #fafafa;
+  padding: 3%;
+  min-height:100px;
+}
+#GroupMainWallMsgs {
+  margin-top: 20px;
+}
+.Following {
+  background-color: #00A000;
+  color: #FFFFFF;
+}
+.Following:hover {
+  border:1px solid green;
+}
+.Follow {
+  background-color: #ffa000;
+  color: #FFFFFF;
+}
+.Follow:hover {
+  border:1px solid orangered;
+}
+.FollowButtons {
+  display: inline-block;
+  float: right;
+  padding: 2% 4%;
+  text-align: center;
+  border:1px solid transparent; 
+  cursor:pointer;
+  border-radius:10px;
+  font-weight:700;
+}
+.divGDCols {
+  float: left;
+  width: 25%;
+}
+.divGDInner {
+  padding: 2%;
+  border:1px solid #ccc;
+}
+.divGDImage img {
+  width: 100%;
+}
+.divGDDescription {
+  font-size: .9em;
+  line-height: 1.5em;
+  color: #666;
+}
+.divGDFollow {
+  margin-top: 6%;
+  text-align: right;
+}
+.divGDRow {
+  padding: 3%;
+}
+#GroupDirectoryCenterPane .FollowButtons {
+  font-size: 0.6em;
+}
+.divWRName,.divWRName2 {
+    cursor:pointer;
+}
+.divWRName2 span:first-child {
+  padding: 0 10px;
+  color:#999;
+}
+.divWallType_0 .divWRName2 {
+  display: none;
+}
+.divGDName {
+  font-weight: 700;
+  margin: 10% 0;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #333;
+}
+.divWallType_100 .divWRName2, 
+    .divWallType_100 .divWREntityImage,  
+    .divWallType_100 .OptionalFunctions .Comment,
+    .divWallType_100 .OptionalFunctions .Share {
+  display:none;
+}
+.divWallType_100 .OptionalFunctions > div:after {
+  content: "";
+  padding-left: 5px;
+}
+.divWallType_100 .divWallRow {
+    border:0;
+}
+#formGroupEdit .qq-upload-button {
+  width: 135px;
+}
+.divGDCols .divGDName, .divGDCols .divGDImage {
+  cursor:pointer;
+}
+.PV.XMenu.Search {
+  position: relative;
+}
+.divSearchResults {
+  position: absolute;
+  width: 200px;
+}
+.divSRow .Inner {
+  position: relative;
+}
+.divSRow .Logo {
+  position: absolute;
+  top: 0;
+  left: 5px;
+}
+.divSRow .Inner {
+  min-height: 25px;
+  padding: 5px 5px 5px 40px;
+}
+.divSRow {
+  min-height: 40px;
+  border-bottom: 1px solid #ccc;
+  cursor:pointer;
+}
+.divSRow .divSRow {
+    border:0;
+}
+.divSRow:hover {
+    background-color:#f0f0f0;
+}
+.divSRow:last-child {
+  border:0;
+}
+.divSearchResults {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 1px solid #CCCCCC;
+  position: absolute;
+  width: 300px;
+}
+.gProfile .Details {
+  padding: 0 0 0 180px;
+  position: relative;
+}
+.gProfile .Photo {
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 170px;
+}
+.gProfile .Photo > img {
+  width: 100%;
+}
+.gProfile .Inner {
+  min-height: 180px;
+}
+.gProfile .Addr > div {
+  padding: 1% 0;
+}
+.gProfile .Addr > span {
+  margin-right: 1%;
+}
+.gProfile .Addr {
+  color: #666;
+}
+.gProfile .Since {
+  font-size:.7em;
+}
+.divWallRow .divWallRow {
+  background-color: #FCFCFC;
+  border-bottom: 1px solid #F0F0F0;
+  margin-top: 10px;
+}
+#CollabAreaWallPost .MainWall .PostPoll {
+  display:none;
+}
+#CollabAreaWallPost .MainWall .Functions div {
+  width:50%;
+}
+.MainWall .Inner {
+    min-height: 0;
+}
+.NoMessages {
+  background-color: #999;
+  color: #fff;
+  padding: 10px;
+  margin-top: 20px;
+}

@@ -1,0 +1,101 @@
+# Helicon ISAPI_Rewrite configuration file
+# Version 3.1.0.87
+
+RewriteEngine on
+RewriteLogLevel 9
+
+# override m.lgug.net
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{HTTP_HOST} m\.lgug\.net [NC]
+  RewriteRule  ^(.*)$ http://www.digitalconcourse.com/2952 [NC,R=301L]
+
+# Override WTS
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{HTTP_HOST} ^www.wts.com\/managedservices\.asp [NC]
+  RewriteRule  ^(.*)$ http://www.velocity.cc/Solutions/[NC,R=301UL]
+
+
+# Checking for Forms related pages
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d 
+#RewriteCond %{HTTP_HOST} ^marketing\.digitalconcourse\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.bbbsli\.org$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.velocity\.cc$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.in4connect\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.velocity-inc\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^marketing\.digitalconcourse\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^.*?tx-tafe\.org$ [OR]
+RewriteCond %{HTTP_HOST} ^.*?dirtybikermpls\.com$
+RewriteCond %{QUERY_STRING} &?rid=([^&]+) [NC]
+RewriteCond %{QUERY_STRING} &?DCMessage=([^&]+) [NC]
+
+ RewriteRule (.*?)/(?!.*?\.asp|dropzone|dc_includes|getdigi|dc_images|GetDigi|DC_Includes|gd_styles|GD_Styles)(.*) $1/dc5wst.asp?t=2&pagearray=$2&rid=%1&DCMessage=%2  [NC,R=301UL]
+
+# Checking for BLOG related pages
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d 
+#RewriteCond %{HTTP_HOST} ^marketing\.digitalconcourse\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.bbbsli\.org$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.velocity\.cc$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.velocity-inc\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^marketing\.digitalconcourse\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.in4connect\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^.*?tx-tafe\.org$ [OR]
+RewriteCond %{HTTP_HOST} ^.*?dirtybikermpls\.com$
+RewriteCond %{QUERY_STRING} &?fpid=([^&]+) [NC]
+RewriteCond %{QUERY_STRING} &?threadid=([^&]+) [NC]
+RewriteCond %{QUERY_STRING} &?postid=([^&]+) [NC]
+RewriteCond %{QUERY_STRING} &?forumid=([^&]+) [NC]
+
+ RewriteRule (.*?)/(?!.*?\.asp|dropzone|dc_includes|getdigi|dc_images|GetDigi|DC_Includes|gd_styles|GD_Styles)(.*) $1/dc5wst.asp?t=2&pagearray=$2&fpid=%1&threadid=%2&postid=%3&forumid=%4  [NC,R=301UL]
+ 
+# Checking for Search related pages
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d 
+#RewriteCond %{HTTP_HOST} ^marketing\.digitalconcourse\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.bbbsli\.org$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.velocity\.cc$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.velocity-inc\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^marketing\.digitalconcourse\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.in4connect\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^.*?tx-tafe\.org$ [OR]
+RewriteCond %{HTTP_HOST} ^.*?dirtybikermpls\.com$
+#RewriteCond %{QUERY_STRING} &?fpid=([^&]+) [NC]
+RewriteCond %{QUERY_STRING} &?wp=([^&]+) [NC]
+RewriteCond %{QUERY_STRING} &?sp=([^&]+) [NC]
+
+ RewriteRule (.*?)/(?!.*?\.asp|dropzone|dc_includes|getdigi|dc_images|GetDigi|DC_Includes|gd_styles|GD_Styles)(.*) $1/dc5wst.asp?t=2&pagearray=$2&wp=%1&sp=%2  [NC,R=301UL]
+ 
+
+# Testing for Follows
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{HTTP_HOST} ^follow\.digitalconcourse\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^group\.digitalconcourse\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^groups\.digitalconcourse\.com$
+ RewriteRule (.*?)/(.*) http://www.digitalconcourse.com/dc_includes/CP6_PulseFollowGroup.asp?fpn=$2  [NC,R=301U,L] 
+
+
+# All Other Pages
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME} !follow
+#RewriteCond %{HTTP_HOST} ^marketing\.digitalconcourse\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.bbbsli\.org$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.velocity\.cc$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.velocity-inc\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^marketing\.digitalconcourse\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.In4Connect\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^.*?tx-tafe\.org$ [OR]
+RewriteCond %{HTTP_HOST} ^.*?dirtybikermpls\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^mciber.digitalconcourse\.com$
+RewriteCond %{QUERY_STRING} &?rid=([^&]+) [NC,OR]
+RewriteCond %{QUERY_STRING} !&?rid=([^&]+) [NC]
+RewriteCond %{QUERY_STRING} &?DCMessage=([^&]+) [NC,OR]
+RewriteCond %{QUERY_STRING} !&?DCMessage=([^&]+) [NC]
+ RewriteRule (.*?)/(?!.*?\.asp|dropzone|dc_includes|getdigi|dc_images|GetDigi|DC_Includes|gd_styles|GD_Styles)(.*) $1/dc5wst.asp?t=2&pagearray=$2&rid=%1&DCMessage=%2  [NC,R=301UL]
