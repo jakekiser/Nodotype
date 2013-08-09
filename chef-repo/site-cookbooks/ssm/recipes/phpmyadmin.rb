@@ -30,11 +30,8 @@ template "/etc/phpmyadmin/config-db.php" do
   variables(:password => node[:mysql][:server_root_password], :username => 'root', :host => '127.0.0.1' )
 end
 
-bash "enable_phpmyadmin_conf" do
-	user "root"
-	code <<-EOH
-		a2enconf phpmyadmin
-	EOH
+execute "a2enconf phpmyadmin" do
+	command "/usr/sbin/a2enconf phpmyadmin"
 end
 
 service "apache2" do
