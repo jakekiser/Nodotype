@@ -237,7 +237,7 @@ global $Persist_UserId, $Persist_LoggedInTennantId, $formModeInd;
                        
             break;
             
-        case 'TENNANTSIGNOUT'
+        case 'TENNANTSIGNOUT':
             break;
             
         case 'OXP':
