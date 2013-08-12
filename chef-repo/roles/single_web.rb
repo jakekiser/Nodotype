@@ -15,7 +15,8 @@ run_list(
 override_attributes({
 	"php" => {
 		"directives" => {
-			"short_open_tag" => "on"
+			"short_open_tag" => "on",
+			"date.timezone" => "America/Chicago"
 		}
 	}
 })
