@@ -4,7 +4,7 @@
 	"ssh_keys": [
 		"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC71rNQq+6Zmq3oBGS7y8G1rtx6mzW8fo+tjCuUyVp6Gzc9QkdAdhO07iWuFmxf+0OUPhdHttT8bQHR4gJXaOTbcwrr0Qf04zGFIeJS6DoEAyzw0WSP+I1jGn+pnIS33R8wPdzyrYzZL/j/1oRpapJ/cVq+k5Tqcn/395f0d9wvXALJUuwToyG02eRPRJk94dNQFOrR7GwDO+7QJDdVZaNWUUHGYqfdMH4NqVVsXjJ+9tn2DZPk1OUtOn1MqvZ3B8B/c8iAzt8lNUbxJz9xeLK5EJztQdyJ9sCpwQ6hLsKt6E2AseJhuL+VFZ9s2b7/+ODtewXLF+A+wgrAakRmJmNP mathew.peterson@nextwavehealth.com"
 	],
-	"groups": [ "sysadmin" ],
+	"groups": [ "admin", "sysadmin" ],
 	"shell": "\/bin\/bash",
 	"comment": "Mathew Peterson <mathew.peterson@nextwavehealth.com>",
 	"nagios": {

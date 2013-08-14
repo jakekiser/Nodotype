@@ -1,6 +1,6 @@
 name "production"
 description "Production role"
 
-run_list({
+run_list(
 	"recipe[chef-duo-unix]"
-})
+)

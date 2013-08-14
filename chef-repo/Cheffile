@@ -25,4 +25,4 @@ cookbook 'percona', '>= 0.14.5'
 cookbook 'chef-php', '>= 1.2.0', :git => "https://github.com/priestjim/chef-php"
 cookbook 'imagemagick', '>= 0.2.2'
 
-cookbook 'chef-duo-unix', '>0 0.1.0', :git => 'https://github.com/hungtruong/chef-duo-unix.git'
+cookbook 'chef-duo-unix', '>= 0.1.0', :git => 'https://github.com/hungtruong/chef-duo-unix.git'
