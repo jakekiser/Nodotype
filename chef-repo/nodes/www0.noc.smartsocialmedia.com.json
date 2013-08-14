@@ -1,0 +1,20 @@
+{
+	"duo_unix": {
+		"conf": {
+			"version": "latest",
+			"integration_key": "DIEA2MIJCYXVWOJE0APN",
+			"secret_key": "xARUoYgxfa4O3Pd2QUH5Us5FNPOIKPCn0MjUL2pg",
+			"api_hostname": "api-3ada041c.duosecurity.com"
+		}
+	},
+	"mysql": {
+		"server_root_password": "QEYUN3E1RjoUix",
+		"server_repl_password": "n0oZ78T8CQQQuF",
+		"server_debian_password": "AtEW9s3NTjV4XL"
+	},
+	"run_list": [
+		"role[base]",
+		"role[single_web]",
+		"role[production]"
+	]
+}

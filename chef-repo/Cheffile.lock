@@ -55,6 +55,13 @@ GIT
     chef-solo-search (0.4.0)
 
 GIT
+  remote: https://github.com/hungtruong/chef-duo-unix.git
+  ref: master
+  sha: 9d7dd9f4d9c90efd777613e06291af763cfd3b5c
+  specs:
+    chef-duo-unix (0.1.0)
+
+GIT
   remote: https://github.com/priestjim/chef-php
   ref: master
   sha: 43d914dddb7a022760ccd1164dee8261038fc554
@@ -68,6 +75,7 @@ DEPENDENCIES
   apt (>= 0)
   build-essential (>= 1.4.0)
   chef-client (>= 0)
+  chef-duo-unix (>= 0)
   chef-php (>= 1.2.0)
   chef-solo-search (>= 0.4.0)
   git (>= 2.5.2)
