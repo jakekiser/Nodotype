@@ -25,6 +25,7 @@ Vagrant::configure("2") do |config|
 	# Networking details
 	config.vm.hostname = "devbox.local"
 	config.vm.network :private_network, ip: "192.168.56.150"
+	config.ssh.forward_agent = true
 
 	# Chef specific
 	config.vm.provision "chef_solo" do |chef|
