@@ -11,6 +11,7 @@ Vagrant::configure("2") do |config|
 		# Set box to ubuntu 12.04 x64 for virtualbox
 		override.vm.box = "precise64-updated"
 		override.vm.box_url = "http://files.vagrantup.com/precise64.box"
+		override.vm.box_url = "https://s3-us-west-2.amazonaws.com/ssm-dev-files/vagrant/precise64-updated.box"
 	end
 
 	# VMware Fusion Specific
