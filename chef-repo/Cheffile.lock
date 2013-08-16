@@ -48,6 +48,13 @@ SITE
       yum (>= 2.3.0)
 
 GIT
+  remote: https://github.com/dergachev/chef_root_ssh_agent
+  ref: master
+  sha: 25a316bed58adb3f4951a0f20ad3dfc3bc2af3df
+  specs:
+    root_ssh_agent (0.1.0)
+
+GIT
   remote: https://github.com/edelight/chef-solo-search
   ref: master
   sha: a28e7f25ab4afb53f9a55dd49d8b1277d0374c29
@@ -85,6 +92,7 @@ DEPENDENCIES
   openssh (>= 1.2.0)
   percona (>= 0.14.5)
   php (>= 1.2.2)
+  root_ssh_agent (>= 0.1)
   ssh_known_hosts (>= 1.0.0)
   users (>= 1.5.0)
   vim (>= 1.0.2)

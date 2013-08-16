@@ -15,6 +15,7 @@
 	"run_list": [
 		"role[base]",
 		"role[single_web]",
-		"role[production]"
+		"role[production]",
+		"role[ssm]"
 	]
 }
