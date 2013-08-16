@@ -55,6 +55,11 @@
 
     #Specific URL/Domain redirect
     RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{HTTP_HOST} dev\.smartsocialmedia\.com\.devbox\.local$ [NC] 
+       RewriteRule ^(.*?)$ index.php?p=oxp&tnt=26&EditMode=0 [L]
+
+    #Specific URL/Domain redirect
+    RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{HTTP_HOST} ^.*?ucahoot\.com$ [NC] 
        RewriteRule ^(.*?)$ index.php?p=oxp&tnt=41&EditMode=0 [L]
 
