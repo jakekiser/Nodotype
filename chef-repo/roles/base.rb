@@ -9,7 +9,9 @@ run_list(
 	"recipe[git]",
 	"recipe[ntp]",
 	"recipe[openssh]",
-	"recipe[ssh_known_hosts]"
+	"recipe[ssh_known_hosts]",
+	"recipe[root_ssh_agent::env_keep]",
+	"recipe[root_ssh_agent::ppid]"
 )
 
 override_attributes({
