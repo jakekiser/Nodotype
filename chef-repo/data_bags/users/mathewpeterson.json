@@ -7,6 +7,17 @@
 	"groups": [ "admin", "sysadmin" ],
 	"shell": "\/bin\/bash",
 	"comment": "Mathew Peterson <mathew.peterson@nextwavehealth.com>",
+	"dotfiles": {
+		"enable_standard": false,
+		"enabled_custom": true,
+		"custom_dotfiles": [
+			".gitattributes",
+			".gitconfig",
+			".gitignore",
+			".screenrc"
+		],
+		"custom_dotfiles_repo": "https://github.com/mathewpeterson/dotfiles.git"
+	},
 	"nagios": {
 		"email": "mathew.peterson@nextwavehealth.com"
 	}

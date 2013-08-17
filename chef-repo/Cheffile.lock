@@ -35,6 +35,9 @@ SITE
     runit (1.1.6)
       build-essential (>= 0.0.0)
       yum (>= 0.0.0)
+    screen (0.8.0)
+      build-essential (>= 0.0.0)
+      git (>= 0.0.0)
     ssh_known_hosts (1.0.0)
       partial_search (>= 0.0.0)
     users (1.5.0)
@@ -69,6 +72,13 @@ GIT
     chef-duo-unix (0.1.0)
 
 GIT
+  remote: https://github.com/mathewpeterson/chef-dotfiles
+  ref: master
+  sha: 2db7dc28085fcdd5bbacf501b04e2ea24ee50332
+  specs:
+    dotfiles (0.1.1)
+
+GIT
   remote: https://github.com/priestjim/chef-php
   ref: master
   sha: 43d914dddb7a022760ccd1164dee8261038fc554
@@ -85,6 +95,7 @@ DEPENDENCIES
   chef-duo-unix (>= 0.1.0)
   chef-php (>= 1.2.0)
   chef-solo-search (>= 0.4.0)
+  dotfiles (>= 0.1.1)
   git (>= 2.5.2)
   imagemagick (>= 0.2.2)
   mysql (>= 3.0.2)
@@ -93,6 +104,7 @@ DEPENDENCIES
   percona (>= 0.14.5)
   php (>= 1.2.2)
   root_ssh_agent (>= 0.1)
+  screen (>= 0.8.0)
   ssh_known_hosts (>= 1.0.0)
   users (>= 1.5.0)
   vim (>= 1.0.2)
