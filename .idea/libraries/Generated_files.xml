@@ -1,0 +1,38 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/public/javascripts/Person/Person.js" />
+        <item url="file://$PROJECT_DIR$/public/javascripts/Person/index.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/express/lib/express.js" />
+        <item url="file://$PROJECT_DIR$/src/User/index.js" />
+        <item url="file://$PROJECT_DIR$/src/User/Models/User.js" />
+        <item url="file://$PROJECT_DIR$/src/User/Models/UserInterface.js" />
+        <item url="file://$PROJECT_DIR$/public/javascripts/Person/PersonInterface.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/public/javascripts/Person/PersonModule.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/Person/lib/PersonInterface.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/Person/lib/Person.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/Person/lib/PersonInterface.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/Person/lib/Person.js" />
+      <root url="file://$PROJECT_DIR$/src/User/User.js" />
+      <root url="file://$PROJECT_DIR$/src/User/User.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/User/index.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/User/lib/UserInterface.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/User/lib/User.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/User/index.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/User/lib/UserInterface.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/User/lib/User.js" />
+      <root url="file://$PROJECT_DIR$/public/javascripts/Person/Person.js" />
+      <root url="file://$PROJECT_DIR$/public/javascripts/Person/index.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/express/lib/express.js" />
+      <root url="file://$PROJECT_DIR$/src/User/Models/User.js" />
+      <root url="file://$PROJECT_DIR$/src/User/index.js" />
+      <root url="file://$PROJECT_DIR$/src/User/Models/UserInterface.js" />
+      <root url="file://$PROJECT_DIR$/public/javascripts/Person/PersonInterface.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>
