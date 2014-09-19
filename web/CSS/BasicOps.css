@@ -1,0 +1,79 @@
+.InfoMsg {
+  background-color: #666;
+  color: #FFFFFF;
+  padding: 10px;
+}
+.InfoMsg a, .InfoMsg a:visited {
+  color: #fff !important;
+}
+.WPScroll {
+  margin: 0 auto;
+  padding: 4%;
+  width: 46.85%;
+}
+.WPScroll .WPScroll {
+    width:auto;
+}
+p {
+    line-height:1.5em;
+}
+h1, h2, h3 {
+    margin:2% 0;
+}
+#divShadowCurtain {
+  background-image: url(/images/TransBlk_60pct.png); 
+  position: absolute;
+  width: 100%;
+  z-index: 90000;
+  height: 100%;
+}
+#dSCIB {
+  background-color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 5px 5px 15px #000000;
+  color: #000000;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 2px 10px;
+  position: relative;
+  top: 40%;
+  width: 80%;
+}
+#dSCIB .Close {
+  background-color: #000000;
+  background-image: url(/images/Controls.png);
+  background-position: -90px -349px;
+  background-repeat: no-repeat;
+  border: 5px solid #000000;
+  border-radius: 50% 50% 50% 50%;
+  cursor: pointer;
+  height: 30px;
+  position: absolute;
+  right: -25px;
+  top: -25px;
+  width: 30px;
+}
+#dSCIB .Close:hover {
+  background-position: -30px -349px;
+}
+#dSCIB .Close img {
+  height: 30px;
+  width: 30px;
+}
+#dSCIBContainer {
+  margin-top: 10px;
+}
+#dSCIBContainer .StdInput input {
+  border: 1px solid #CCCCCC;
+  border-radius: 5px 5px 5px 5px;
+  margin-top: 3px;
+  padding: 8px;
+  width: 100%;
+}
+#dSCIBContainer .StdLabel {
+  color: #666666;
+}
+#divForm {
+  padding: 10px 30px;
+}

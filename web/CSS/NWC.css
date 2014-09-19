@@ -1,0 +1,243 @@
+H1 {
+font-size:1.8em;
+font-weight:700;
+}
+H2 {font-size:1.5em}
+H3 {font-size:1.2em}
+H1, H2, H3 {margin-bottom:1%;}
+
+a, a:visited {
+color:#333;
+text-decoration:none;
+}
+a:hover {
+text-decoration:underline;
+color:#000;
+}
+#HTMLBody {
+  background-color: #92CDF5;
+  background-image: url(/DZ/26/f//HCMeeting.png);
+  background-position: 50% 0;
+
+  background-size: 100% auto;
+  color: #333333;
+  font-family: Arial,Helvetica,sans-serif;
+  background-attachment: fixed;
+}
+.SignIn .StdRow {
+  float: left;
+}
+.SignIn .NewAcct .StdRow {
+  float: none;
+}
+.SignIn #NewAcct .StdRow .StdInput,
+  .SignIn #SignInForm .StdRow .StdInput {
+  margin-top:5px;
+}
+.SignIn .NewAcct input {
+  width: 95%;
+}
+#NewAcct h2 {
+  margin: 0 0 20px;
+}
+.SignIn .NewAcct .Action input {
+  width: auto;
+}
+.StdRow.SignInHouseKeeping {
+  float: none;
+  clear: both;
+}
+.StdRow.ForgottenPWD {
+  float: right;
+  margin: 5px 0;
+}
+
+.EmailArea, .PasswordArea {margin-right:5px;}
+
+.Action input {
+  background-color: #A0CF67;
+  border: 0 none;
+  border-radius: 5px;
+  color: #000;
+  margin-left: 11%;
+  padding: 4px;
+  width: 100px;
+  cursor:pointer;
+}
+#SignInForm .ActionButton {
+  margin-top: 22px;
+}
+.Action input:hover {
+  background-color:#ffa000;
+  color:#333;
+  box-shadow:5px 5px 10px #666;
+}
+.SignIn {
+  background-image: url(/images/TransBlk_60pct.png);
+  border-radius: 10px;
+  color: #FFFFFF;
+  display: inline-block;
+  margin: 0 0 0 15%;
+  padding: 3%;
+  min-width:450px;
+  text-align: left;
+}
+.SignIn .BackLink {
+  float:right !important;
+}
+.SignIn a, .SignIn a:visited {
+  color:#fff;
+}
+.XPageContainer {
+  min-height: 800px;
+margin-top: 55px;
+}
+
+#XPage_150 .XPageContainer {
+  min-height: 900px;
+}
+.StdInput input {
+  border: 0 none;
+  border-radius: 5px 5px 5px 5px;
+  padding: 9px;
+}
+.StdRow.NeedAcct {
+  font-weight: 700;
+  margin-top: 3%;
+  float: none;
+}
+#XPageContainer_150 h1 {
+  margin: 2% 0 1% 15%;
+}
+.SSMLogo {
+  margin: 0 auto;
+  min-width: 325px;
+  width: 30%;
+}
+.SSMLogoContainer {
+    text-aligh:center;
+}
+.WPScroll {
+  margin: 0 auto;
+  padding: 4%;
+  width: 46.85%;
+}
+#XPage_150 .WPScroll {
+  width:auto;
+  margin:0;
+  padding:0;
+}
+.StdXPage {
+   background-color:#fff;
+}
+#XPage_150.StdXPage {
+  background-color:transparent;
+  padding-top:2%;
+}
+.PV.TopXMenuContainer {
+  background-image:  url(/images/TransBlk_60pct.png);
+  position: fixed;
+  width: 100%;
+}
+.PV.TopXMenuContainer li {
+  float: left;
+  margin-right: 25px;
+}
+.PV.TopXMenuContainer li a, .PV.TopXMenuContainer li a:visited {
+  color: #FFFFFF;
+  font-size: 1.2em;
+}
+.ClearFloat {
+  clear:both;
+  float:none !important;
+  height:0;
+  line-height:0;
+}
+.TopXMenuInner {
+  float: right;
+  padding: 10px;
+}
+.TopOfPage {
+  float: right;
+}
+#XPageContainer_150 h1 {
+color: #fff;
+}
+.Col {
+  float: left;
+  width: 50%;
+}
+.Col .Inner {
+  padding: 0 3%;
+}
+
+@media screen and (max-width: 700px) {
+    .SignIn {
+        margin: 0 0 0 5%;
+    }
+    #XPageContainer_150 h1 {
+        margin: 2% 0 1% 5%;
+    }  
+    .divLoginContainer {
+         text-align: center;
+    }
+    .divLoginContainer div {
+         text-align: left;
+    }
+    .Col {
+        float: none;
+        width: auto;
+    }   
+    .WPScroll {
+        width: auto;
+    }     
+}
+@media screen and (max-width: 450px) {
+    .SignIn {
+        margin: 0 3%;
+        min-width: 0 !important;
+        width: 87%;
+    }
+    .SignIn .StdRow {
+        float: none;
+    } 
+    .SignIn .EmailArea input, .SignIn .PasswordArea input {
+        width: 95%;
+    }
+    .SignIn .Action {
+        text-align:center;
+    }
+    .SignIn .ForgottenPWD {
+        margin: 8% 0 3%;
+    }
+    .SignIn .SignInHouseKeeping {
+        margin: 7% 0 10%;
+    }
+    .SignIn .NewAcct .BackLink, .SignIn .SignInHouseKeeping .NeedAcct, .SignIn .SignInHouseKeeping .ForgottenPWD {
+        background-color: #FFA100;
+        border-radius: 8px 8px 8px 8px;
+        float: none !important;
+        font-weight: 700;
+        margin: 0 0 10%;
+        padding: 4%;
+        text-align: center;
+    }  
+    .SignIn .NewAcct .BackLink, .SignIn .SignInHouseKeeping .NeedAcct {
+        background-color: #00a000;
+    }
+    #XPageContainer_150 h1 {
+        font-size: 100%;
+    }
+    .SSMLogoContainer {
+        text-align: center;
+    }
+
+    .NWCLogo img {
+        width:100%;
+    }
+    .RSSDesc img {
+        min-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,1463 @@
+body {
+  font-size:100%;
+  font-family:tahoma,arial;
+  background-attachment: fixed;
+  background-color:#000;
+  color:#fff;
+}
+body.Home {
+  background-color:#fff;
+}
+em {
+    font-style: italic;
+}
+strong {
+    font-weight: 700;
+}
+small {
+    font-size:.7em;
+}
+a, a:visited {
+    text-decoration:none;
+}
+a:hover {
+    text-decoration:underline;
+}
+b {
+    font-weight: 700;
+}
+h1.PageTitle {
+    color: #FFA100;
+}
+h1 {
+  font-size:2em;
+  line-height:1.2em;
+  margin:.5em 0;
+}
+h2 {
+  font-size:1.5em;
+  line-height:1.2em;
+  margin-bottom:1em;
+}
+h3 {
+  font-size:1.2em;
+  margin-bottom:1em;
+}
+hr {
+  margin:20px 0;
+  border:1px solid #fff;
+}
+p {
+  color:#fff;
+  line-height:1.5em;
+  margin:1em 0;
+}
+.More {
+    text-align:right;
+    font-size:.8em;
+    color:#666;
+}
+.cke_editable_inline:hover {
+    background-color: #222;
+}
+.Twitter {
+/*    background-image:url('/images/Twiiter2ColorBW.png');
+    background-repeat:no-repeat;
+    background-position:50% 0;
+    background-size: 100%;
+*/
+}
+a.Twitter {
+    color:#999;
+}
+a.Twitter:hover {
+    color:#000;
+}
+ul.BasicUL {
+  margin:1em 0 1em 2em;
+  font-size:.9em;
+}
+ul.BasicUL li {
+  padding:.2em;
+  list-style:disc;
+}
+
+.MyPic {
+  float:left;
+  margin:0 10px 10px 0;
+  width:30%;
+  max-width:150px;
+}
+.AboutMe h3 {
+  margin:0;
+}
+.AboutMe p {
+  margin:0;
+}
+.me {
+  margin-top:10px;
+  font-size:.9em;
+  color:#fff;
+  font-family:tahoma,arial;
+}
+.me a, .me a:visited {
+  color:#fff;
+  text-decoration:none;
+}	
+.me a:hover {
+  text-decoration:underline;
+}
+.Date {
+  color:#fff;
+}	
+.Logo {
+  text-align:center;
+  margin-top:30px;
+}
+#BodyContainer {
+background-color: #000000;
+padding: 0;
+text-align: center;
+}
+.Home #BodyContainer {
+/*background-image: url("/images/WeCanHelpYouGetThereBANNER.jpg");*/
+background-position: 50% 50%;
+background-repeat: no-repeat;
+background-size:100% 100%;
+}
+#Body, #WhatWeDo p {
+  margin: 0 auto;
+  min-width: 900px;
+  padding: 0 3%;
+  position: relative;
+  text-align: left;
+  width: 46.85%;
+}
+#LeftPane {}
+.BasicMenu {padding:0;margin:0;float:right;width:25%;}
+.BasicMenu li {list-style:none;float:left;width:25%;max-width:150px;text-align:center;text-transform:lowercase;}
+.BasicMenu li a, .BasicMenu li a:visited {color:#fff;text-decoration:none;white-space: nowrap;}
+.BasicMenu li a:hover div {
+    color:#fff;
+    background-color:#ffa100;
+}
+.BasicMenu li div div {
+    /*background-image:url('/images/DA_MenuSelectors.png');*/
+    display:none;
+    
+}
+.BasicMenu li.Selected div {border-bottom:1px solid #00A000;}
+.BasicMenu li div {padding:10% 1%;text-align:center;font-size:.8em;}
+
+#BottCred {
+  background-color: #000000;
+  bottom: 0;
+  color: #FFFFFF;
+  font-size: .8em;
+  opacity: 0.5;
+  padding: 20px;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
+#BottCred:hover {opacity:1;} 
+#BottCred:hover .addthis_toolbox {
+    display:block;
+}
+.ClearFloat {clear:both;float:none !important;height:0;line-height:0;}
+#BottCred a, #BottCred a:visited {color:#fff;text-decoration:none;}
+#Logo {
+  margin: 0 auto;
+  padding: 10px;
+  text-align: left;
+  width: 68%;
+}
+.ls-s-1.text > div {
+  font-size: 2em;
+  font-weight: 700;
+  padding:5%;
+  background-image: url('/images/TransBlk_60pct.png');  
+}
+.ls-s-1.text > div div {
+  background-image: url("/images/DigiapolisLogoWhite2.png");
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+  background-size: 13% auto;
+  padding: 1% 0 1% 15%;
+}
+#Logo img {border:0;}
+#imgLogoSmall {display:none;}
+.ActionButton {cursor:pointer;}
+.BGRepeat {
+    padding:5px 0 5px 5px;
+}
+#KeyMessages {
+  font-size:1.5em;
+  text-align:center;
+  padding:7% 0 4%;
+}
+#KeyMessages span {
+    margin:0 2%;
+}
+#BigLogo img {
+    width:79.66666666666667%;
+    max-width:465px;
+}
+#BigLogo div {text-align:center;}
+
+.ServiceTile {
+    float: left;
+    font-size: 0.8em;
+    margin: 0 3px 6px;
+    text-align: center;
+    vertical-align: bottom;
+    width: 32.3%;
+    position:relative;
+    height:15%;
+    cursor:pointer;
+    max-height: 15%;
+    min-height:135px;
+}
+.ServiceTile div.ServiceText {
+    bottom: 5%;
+    position: absolute;
+    text-align: center;
+    width: 100%;   
+    background-position:50% 50%;
+    background-repeat:no-repeat;
+}
+.ServiceTile div.ServiceImage {
+    text-align:center;
+    padding-top:10%;
+}
+.ServiceTile div.ServiceImage img {
+    width:70%
+}
+#ServiceTiles {
+    width:46.85%;
+    margin:0 auto;
+    min-width: 900px;
+}
+.STBlue {background-color:#0098E8;color:#fff;}
+.STOrange{background-color:#FFA100;color:#fff;}
+.STGreen {background-color:#00A000;color:#fff;}
+.STSkills {background-color:#666;color:#fff;}
+.STPeople {
+    width:65.2027027027027%;
+    background-color:#fff;
+    overflow:hidden;
+}
+.STPeople img {
+    width:100%;
+}
+.BasicTiles {
+    width:65.58295964125561%;
+    float:left;
+    /*background-image:url('/images/people.jpg');*/
+}
+#RSSTileContainer {
+    float: right;
+    width: 33.88888888888889%;
+    padding:0;
+}
+#RSSTile {
+   /* height:26.6%; */
+    padding:1% 3%;
+    border-left:1px solid #ccc;
+}
+#RSSTile h3 {
+    color:#333;
+}
+.RSSRow {
+    margin-bottom:3%;
+}
+.RSSRow div {
+    color:#333;
+    font-size:.9em;
+    line-height:1.5em;
+}
+.RSSRow div a, .RSSRow div a:visited {
+    color:#333;
+    text-decoration:none;
+}
+.RSSDate {
+    font-size:.8em !important;
+    color:#999 !important;
+    text-align:right;
+}
+.RSSDesc {
+    display:none;
+}
+#divTwitter, #divFaceBook, #divBlog {
+    float:left;
+    width:33%
+}
+#divTwitter img, #divFaceBook img, #divBlog img {
+    width:100%;
+}
+#SocialLinks {
+    float: right;
+    position: relative;
+    top: -30px;
+    width:13.3335%;
+}
+.UnderConstruction {
+    font-size: 0.6em;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.ServiceImage:hover { 
+    -webkit-transform: rotate(360deg); 
+    -moz-transform: rotate(360deg); 
+    -o-transform: rotate(360deg); 
+    -ms-transform: rotate(360deg); 
+    transform: rotate(360deg); 
+    transition: all 1s ease-in-out 0s
+}
+.ServiceTile:hover {
+    background-image: url('/images/TransBlk_25pct.png');
+}
+.STPeople {
+    opacity:.9;
+}
+.STPeople:hover  {
+    opacity:1;
+}
+.WPScroll {
+   min-width: 900px;
+   padding: .2% 3% 3%;
+   position: relative;
+   text-align: left;
+   width: 46.85%;
+   margin: 0 auto;
+   background-image: url('/images/TransBlk_25pct.png');
+}
+.WPScroll h1 {
+    padding: 1em 0 .1em;
+}
+.WPScroll ul {
+    padding-left:2%;
+    margin-left:2%;
+    list-style: disc;
+    margin-bottom:2%;
+}
+.WPScroll ul li {
+    padding: .5em;
+    line-height:1.5em;
+    font-size:.9em;
+}
+.WPScroll a, .WPScroll a:visited {
+    color:#fff;
+}
+.TopOfPage {
+    margin-top:3%;
+    text-align:right;
+}
+.TopOfPage a, .TopOfPage a:visited {
+    background-image: url("/images/TransBlk_25pct.png");
+    font-size: 0.9em;
+    font-weight: 700;
+    padding: 1% 2%;
+    text-decoration: none;
+}
+.TopOfPage a:hover {
+    background-color:#333;    
+}
+.WebDevelopmentContainer, .ResponsiveMarketingContainer, .BusinessSocialContainer, .SkillsContainer {
+    padding:0;
+    margin: 13% 0;
+}
+.WebDevelopmentContainer {
+    background-color:#0098E8;
+}
+.BusinessSocialContainer {
+    background-color:#00A000;
+}
+.ResponsiveMarketingContainer {
+    background-color:#ffa100;
+}
+.SkillsContainer {
+    background-color: #666;
+}
+.WebDevelopmentContainer a, .WebDevelopmentContainer a:visited,
+    .ResponsiveMarketingContainer a, .ResponsiveMarketingContainer a:visited,
+    .SkillsContainer a, .SkillsContainer a:visited,
+    .BusinessSocialContainer a, .BusinessSocialContainer a:visited {
+    color:#fff;
+}
+.StdScrollAnchor {
+    text-decoration:none;
+    color:#fff;
+}
+.C1, .C2 {
+    float:left;
+    width:50%;
+}
+.SkillsContainer h2 {
+    margin-top:1em;
+}
+.SkillsContainer .TwoColumn ul li {
+    padding:0 !important;
+}
+.SmallLogo img {
+    background-image: url("/images/digiapolisSmallLogoICONWHITE.png");
+    background-repeat: no-repeat;
+    height: 70px;
+    position: absolute;
+    top: 1.3%;
+}
+#WhatWeDo p {
+    color:#333;
+    margin: 0 auto;
+    padding: 0.9em;
+    font-size:.9em;
+}
+#WhatWeDo {
+    margin-bottom:1em;
+    background-color:#dadada;
+}
+#KeyMessages a, #KeyMessages a:visited {
+    color:#fff;
+    text-decoration:none;
+}
+.addthis_toolbox {
+    margin: 1% auto 0;
+    max-width: 340px;
+    display:none;
+}
+#divForm {
+    padding-bottom: 100px;
+}
+.BottomMenu {
+    margin-left:3%;
+}
+.BottomMenu a {
+    margin-right:.2%;
+}
+.BottomMenu a:hover {
+    text-decoration:underline !important;
+}
+.Footer {
+    margin:20px 0 100px 0 !important;
+}
+.TwoCol .LeftPane, .TwoCol .RightPane {
+    float: left;
+}
+.TwoCol .LeftPane {
+    width:50%;
+}
+.TwoCol .RightPane {
+    width:50%;
+}
+.TwoCol a, .TwoCol a:visited {
+    color:#fff;
+    text-decoration:none;
+}
+.CompanyName {
+    font-size: 1.5em;
+    padding: 0 0 10px 0;
+    text-align:left;
+}
+.ContactAddress {
+    padding:0 0 0 20%;
+}
+.CompanyAddress div {
+    padding:4px;
+}
+.SignIn .TwoCol .divInner {
+    padding:0 15%;
+}
+.SignIn .StdInput input, .SignIn .StdInput textArea {
+    width:90%;
+}
+.RowDBId {
+    font-size:.8em;
+    color:#999;
+}
+#formSignIn input.ActionButton, #formContactUs input.ActionButton {
+    /*display:none;*/
+}
+#formSignIn:hover input.ActionButton, #formContactUs:hover input.ActionButton {
+    display:block;
+}
+#red, #green, #blue {
+    float: left;
+    clear: left;
+    width: 300px;
+    margin: 15px;
+}
+#swatch {
+    width: 120px;
+    height: 100px;
+    margin-top: 18px;
+    margin-left: 350px;
+    background-image: none;
+}
+#red .ui-slider-range { background: #ef2929; }
+#red .ui-slider-handle { border-color: #ef2929; }
+#green .ui-slider-range { background: #8ae234; }
+#green .ui-slider-handle { border-color: #8ae234; }
+#blue .ui-slider-range { background: #729fcf; }
+#blue .ui-slider-handle { border-color: #729fcf; }
+#StylerFunctions .ui-slider .ui-slider-handle {
+    width:.8em;
+    height:.8em;
+}
+#StylerFunctions div.ui-slider {
+    height:5px;
+}
+#Layout1 {
+    border:1px solid #333;
+    margin:45px auto 20px;
+    width:300px;
+}
+#Layout1 .l_BodyCenter {
+  margin: 0 auto;
+  width: 55% !important;
+}
+#Layout1 div {
+  border: 1px solid #333;
+  text-align: center;
+  font-weight: 700;
+  color:#999;
+}
+.l_BodyContainer {
+    border: 0 !important;
+}
+#Layout1 .l_BodyContainer div:hover {
+    color:#fff;
+    background-color: #00a000;
+}
+#Layout1 .l_Header:hover, #Layout1 .l_Footer:hover {
+    color:#fff;
+    background-color: #00a000;    
+}
+#Layout1 .l_Header {
+    border-top: 0;
+    border-left: 0;
+    border-right:0;
+    padding: 5px;
+}
+#Layout1 .l_Footer {
+    border-bottom: 0;
+    border-left: 0;
+    border-right:0;
+    padding: 5px;
+}
+#Layout1 .l_BodyCenter {
+    border-bottom: 0;
+    border-top: 0;
+    border-left:1px solid #333 !important;
+    border-right:1px solid #333 !important;
+}
+.l_BodyContainer div {
+  border: 0 none !important;
+  float: left;
+  width: 22% !important;
+  height: 200px;
+}
+.StyleSlider {
+  margin-left: 80px;
+}
+/* iPads (portrait) ----------- */
+@media only screen 
+    and (min-device-width : 768px) 
+    and (max-device-width : 1024px) 
+    and (orientation : portrait) {
+
+    #ServiceTiles {
+        min-width: 0;
+    } 
+    #Body, #WhatWeDo p, .WPScroll, #ServiceTiles {
+        min-width: 0;
+        width: 90%;
+    } 
+    .ServiceTile {
+        height:100px;
+        width: 32%;
+    }
+    #KeyMessages {
+        font-size: 1em;
+    }
+    .WebDevelopmentContainer, .ResponsiveMarketingContainer, .BusinessSocialContainer, .SkillsContainer {
+        margin: 15% 0;
+    } 
+    .STPeople {
+        width: 65.2027%;
+    }
+    .STPeople img {
+        width:100%;
+    }    
+}
+/* iPads (landscape) ----------- */
+@media only screen 
+    and (min-device-width : 768px) 
+    and (max-device-width : 1024px) 
+    and (orientation : landscape) {
+    #BigLogo img#DigiLogo {
+        width: 300px;
+    }
+    .ServiceTile {
+        min-height:0;
+    }
+
+    .ServiceTile div.ServiceImage img {
+        width: 50%;
+    }   
+    #KeyMessages {
+        font-size: 1em;
+        padding: 2% 0;
+    }    
+}
+/* iPads (landscape) ----------- */
+@media only screen 
+    and (min-device-width : 768px) 
+    and (max-device-width : 1366px) 
+    and (orientation : landscape) {
+    #BigLogo img#DigiLogo {
+        width: 40%;
+        max-width:360px;
+    }
+    .ServiceTile {
+       height:16%;
+       max-height:120px;
+       min-height:106px;
+    }
+    .ServiceTile div.ServiceImage img {
+       width:60%;
+    }   
+    #KeyMessages {
+        font-size: 1em;
+        padding: 2% 0;
+    }   
+    .ServiceTile div.ServiceImage {
+       padding-top:7%;
+    }    
+}
+.StdRow .Controls, .StdRow .Edit, .StdRow .Delete, .StdRow .Name, .StdRow .Title, .StdRow .Sort {
+    float:left;
+    padding:2px;
+}
+.StdRow .Name, .StdRow .Title {
+    margin-top:10px;
+}
+.ui-sortable li .Sort a {
+    cursor:ns-resize;
+}
+.ui-sortable li {
+    border:1px solid #333;
+    background-color:#121212;
+}
+.ui-sortable li.PlaceHolder {
+    font-size: 1.3em !important;
+    margin: 0 !important;
+    padding: 15px !important;
+    width: 100% !important;
+    border: 0;
+    background-color: transparent;
+}
+.ui-sortable {
+    padding: 2px 0;
+}
+.XMenusSort .ui-sortable li, .XMenusSort .ui-sortable .StdList a {
+    cursor:move !important;
+}
+.XMenusSort .ui-sortable .StdList:hover {
+    background-color:#666;
+}
+#EditList h2 {
+    display:none;
+}
+.FuncPane  .h2XPages {
+    display:block !important;
+}
+.XMenusSort .h2XPages {
+    display:none !important;
+    margin:0;
+}
+.XMenusSort .h2ActiveMenus, .XMenusSort .h2InactiveMenus {
+    display:block !important;
+}
+li.ClearFloat {
+    visibility: hidden;
+}
+.Controls .Sort {
+    display:none;
+}
+.ui-sortable .Controls .Sort {
+    display:block;
+}
+.XMenusSort .Controls .Edit,.XMenusSort .Controls .Delete {
+    display:none;
+}
+.StdRow .Controls img {
+    width:30px;
+    height:30px;
+    border:0;
+}
+.StdRow .Controls a, .StdRow .Controls a:visited {
+    border:0;
+}
+.TopXMenuContainer {
+    text-align:right;
+    padding-top:20px;
+}
+.TopXMenuInner {
+    float:right;
+}
+.oxp #Body {
+    width:auto !important;
+    padding:0 !important;
+}
+
+.oxpWidget {
+  background-color: #111111;
+  border: 1px solid #222222;
+  float: left;
+  height: 100px;
+  margin: 5px;
+  text-align: center;
+  vertical-align: middle;
+  width: 22.57%;
+  cursor: pointer;
+}
+.oxpWidget > div {
+  font-size: 0.8em;
+  margin-top: 40%;
+}
+.oxpWidget:hover {
+    background-color: #00a000;
+}
+.OXP_PAGELIST #imgLogoSmall {
+    display:none;
+}
+#WidgetFunctions {
+}
+.PV.XMenu {
+    float:left;
+    margin-right:10px;
+    font-size:.9em;
+}
+.PV.XMenu a, .PV.XMenu a:visited, .TopOfPage a, .TopOfPage a:visited {
+    color:#fff;
+    text-decoration:none;
+}
+.PV.XMenu a:hover {
+    color:#ffa100;
+}
+.Add {
+    background-image: url("/images/Controls.png");
+    background-position: 0 0;    
+    background-repeat: no-repeat;    
+}
+.Add:hover {
+    background-position: -30px 0;    
+}
+.Upload a, .Upload a:visited {
+    color:#fff;
+}
+.Upload img {
+    background-image: url("/images/Controls.png");
+    background-position: 0 -321px;    
+    background-repeat: no-repeat;  
+    width:30px;
+    vertical-align: middle;
+}
+.Upload:hover img {
+    background-position: -30px -321px;        
+}
+.StdRowName {
+  float: left;
+  margin-top: 2%;
+  padding: 2px;
+  width: 30%;
+  word-break: break-all;
+  font-size:.8em;
+}
+.Sort {
+    background-image: url("/images/Controls.png");
+    background-position: 0 -144px;    
+    background-repeat: no-repeat;    
+}
+.Sort:hover {
+    background-position: -30px -144px;        
+}
+.XMenusSort .Sort {
+    background-position: 0 -199px !important;    
+}
+.XMenusSort .StdList:hover .Sort {
+    background-position: -30px -201px !important;        
+}
+.Edit {
+    background-image: url("/images/Controls.png");
+    background-position: 0 -54px;
+    background-repeat: no-repeat;    
+}
+.Edit:hover {
+    background-position: -30px -54px;        
+}
+.View {
+    background-image: url("/images/Controls.png");
+    background-position: 0 -88px;
+    background-repeat: no-repeat;
+}
+.View:hover {
+    background-position: -30px -88px;        
+}
+.Delete {
+    background-image: url("/images/Controls.png");
+    background-position: 0 -27px;
+    background-repeat: no-repeat;
+}
+.Delete:hover {
+    background-position: -30px -27px;     
+}
+.Save {
+    background-image: url("/images/Controls.png");
+    background-position: 0 -174px;
+    background-repeat: no-repeat;    
+}
+.Save:hover {
+    background-position: -30px -174px;     
+}
+.Site {
+    background-image: url("/images/Controls.png");
+    background-position: 0 -232px;
+    background-repeat: no-repeat;    
+}
+.Site:hover {
+    background-position: -30px -232px;     
+}
+.Styler {
+    background-image: url("/images/Controls.png");
+    background-position: 0 -290px;
+    background-repeat: no-repeat;    
+}
+.Styler:hover {
+    background-position: -30px -290px;     
+}
+.Widget {
+    background-image: url("/images/Controls.png");
+    background-position: 0 -262px;
+    background-repeat: no-repeat;    
+}
+.Widget:hover {
+    background-position: -30px -262px;     
+}
+.List {
+    background-image: url("/images/Controls.png");
+    background-position: 0 -116px;
+    background-repeat: no-repeat;    
+}
+.List:hover {
+    background-position: -30px -116px; 
+}
+.StdRow .Controls .Add {
+    margin-right:5px;
+}
+.StdRow .Controls .Sort {
+    background-position: 0 -141px;
+    margin-right:5px;
+}
+.StdRow .Controls .Edit {
+    margin-right:5px;
+}
+.StdRow .Controls .View {
+    margin-right:5px;
+}
+.StdRow .Controls .Delete {
+    margin-right:5px;
+}
+.xMenu .Toggle {
+    margin-right:10px;
+    float: right;    
+}
+.xMenu .Add {
+    margin-right:10px;
+    float: right;
+}
+.xMenu .View {
+    margin-right:10px;
+    float: right;
+}
+.xMenu .Sort {
+    margin-right:10px;
+    float: right;
+}
+.xMenu .Save {
+
+    margin-right:10px;
+    float: right;
+}
+.xMenu .Delete {
+    margin-right:10px;
+    float: right;
+}
+.xMenu .List {
+    margin-right:10px;
+    float: right;
+}
+.xMenu .Widget {
+    margin-right:10px;
+    float: right;
+}
+.xMenu .Site {
+
+    margin-right:10px;
+    float: right;
+}
+.xMenu .Styler {
+
+    margin-right:10px;
+    float: right;
+}
+.xMenu div a img {
+    width:30px;
+    height:30px;
+    border:0;
+}
+.xMenu .Add a, .xMenu .Add a:visited {
+    color:#fff;
+    text-decoration:none;
+}
+.XMenusSort #SortableList.ui-sortable li {
+    display: inline-block;
+    font-size: 0.6em;
+    margin: 0.35% 0.01%;
+    overflow: hidden;
+    width: 18.745%;
+}
+#SortableList.ui-sortable, #SortableList2.ui-sortable {
+    list-style-type: decimal;
+    margin-left: 30px;
+}
+.XMenusSort #SortableList.ui-sortable{
+    margin-left: 0;
+}
+.XMenusSort #SortableList.ui-sortable{
+    list-style: none;
+}
+
+
+.XMenusSort #SortableList.ui-sortable li .Controls a img {
+    width:30px;
+    height:30px;
+}
+.XMenusSort .xMenu #ListBtn {
+    display:none;
+}
+.XMenusSort #InactiveSortableList .Controls {
+    display:none;
+}
+.XMenusSort #InactiveSortableList .StdRow .Title {
+    margin:0;
+}
+.XMenusSort #InactiveSortableList .StdRow {
+    padding:5px;
+    border:1px solid #222;
+    background-color:#000;
+    cursor:move;
+}
+.ui-draggable-dragging .Controls {
+    display:none;
+}
+.ui-draggable-dragging .Title {
+}
+.ui-draggable-dragging  {
+    background-color:#00a000 !important;
+    width:200px;
+}
+.XMenusSort .divSortable {
+    background-color: #111111;
+    border: 1px solid #222222;
+    margin-bottom: 40px;
+    min-height: 65px;
+    padding: 0 5px;
+}
+.ui-sortable-helper li, .ui-draggable-dragging {list-style:none;}
+
+#FuncPane h2 {
+    margin-bottom:.2em;
+    padding-bottom:3px;
+    color:#666;
+    font-size:1.1em;
+    border-bottom:1px solid #666;
+}
+.NavPane, .FuncPane {
+    float:left;
+}
+.NavPane {
+    width:15%;
+    margin:4% 0 100px 0;
+}
+.FuncPane {
+    width:55%;
+    margin:0 1% 0 1%;
+    
+}
+.ExplainPane {
+    width:25%;
+    margin-left:1%;
+    float:left;
+    font-size:.8em;
+}
+.NavPane .VM {
+  background-color: #222222;
+  background-image: url("/images/NavControls.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  height: 50%;
+  margin-top: 3%;
+}
+.NavPane .VM img {
+    width:90%;
+    height:90%;    
+}
+.VMSelected {
+    background-color:#00A000 !important;
+}
+.VM:hover {
+    background-color:#666;
+}
+.VM_Nav {
+    background-position: 50% 0;
+}
+.VM_Pages {
+    background-position: 50% 34%;
+}
+.VM_Site {
+    background-position: 50% 68%;
+}
+.VM_Tools {
+    background-position: 50% 100%;
+}
+.StdRow .Controls .Edit {
+    background-image:url('/images/Controls.png');
+}
+.StdRow .Controls .Delete {
+    background-image:url('/images/Controls.png');
+}
+.StdRow .Name, .StdRow .Title {
+    width:300px;
+}
+.StdHeader {
+    border-bottom:1px solid #333 !important;
+    margin:5px 0;
+}
+.EditList .StdList:hover {
+    background-color:#333;
+}
+.StdList, .StdRow {
+    margin-bottom:10px;
+    border: 1px solid transparent;
+}
+.SignInHouseKeeping .ForgottenPWD {
+    margin:15px 0;
+} 
+.FlowRow .StdLabel {
+    float:none;
+    text-align:left;
+    width:auto;
+}
+#OXPForm .FlowRow {
+    float:none;
+}
+#OXPForm .FlowRow input#Title {
+    width:45%;
+}
+.InfoMsg.Add img {
+  background-image: url("/images/Controls.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width:30px;
+  vertical-align:middle;
+  margin-right:10px;
+}
+.InfoMsg.Add:hover img {
+    background-position: -30px 0;    
+}
+.InfoMsg.Add > a, .InfoMsg.Add > a:visited {
+  color: #FFFFFF;
+}
+.InfoMsg.Add {
+  background-image: none;
+  padding-left: 40px;
+  position: relative;
+}
+.EditImg {
+  left: 5px;
+  position: absolute;
+  top: 5px;
+}
+#divWidgetContainer h2 a, #divWidgetContainer h2 a:visited {
+  border-right: 1px solid #555555;
+  color: #555555;
+  content: "x";
+  margin-right: 10px;
+  padding-right: 10px;
+}
+#divWidgetContainer #SortableList.ui-sortable {
+    margin-left: 0;
+}
+#divFileSetup .ui-sortable .StdRow .Controls {
+  width:auto;
+}
+#divFileSetup .ui-sortable .Controls .Edit, #divFileSetup .ui-sortable .Controls .Delete {
+ display:block; 
+}
+#divShadowCurtain {
+  background-image: url('/images/TransBlk_60pct.png'); 
+  position: absolute;
+  width: 100%;
+  z-index: 90000;
+  height: 100%;
+}
+#dSCIBContainer {
+    margin-top:10px;
+}
+#dSCIBContainer .xMenu {
+    float:right;
+}
+#dSCIB {
+  background-color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 5px 5px 15px #000;
+  color: #000000;
+  margin: 0 auto;
+  padding: 2px 10px;
+  position: relative;
+  top: 40%;
+  width: 80%;
+  max-width: 800px;
+}
+#dSCIB .Close {
+  background-color: #000000;
+  background-image: url("/images/Controls.png");
+  background-position: 0 -349px;
+  background-repeat: no-repeat;
+  border: 5px solid #000000;
+  border-radius: 50% 50% 50% 50%;
+  height: 30px;
+  position: absolute;
+  right: -25px;
+  top: -25px;
+  width: 30px;
+  cursor:pointer;
+}
+#dSCIB .Close:hover {
+    background-position: -30px -349px;
+}
+#dSCIB .Close img {
+    width:30px;
+    height:30px;
+}
+#dSCIB .Save {
+  background-position: -60px -174px;
+}
+#FileContentContainer {text-align: center;}
+#FileContent {
+  margin: 0 auto;
+  min-height: 300px;
+  width: 95%;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+#SortableList2 .Image {
+  float: right;
+  margin: 4px;
+}
+#SortableList2 .Image img {
+  width:30px;
+  height:30px;
+}
+.FSMode_12 .Controls .Edit, .FSMode_12 .Controls .Sort {
+    display:none !important;
+}
+#selCurrFolder {
+  display: none;
+}
+.qq-upload-button > img {
+  background-image: url("/images/Controls.png");
+  background-position: 0 -321px;
+  float: left;
+  height: 30px;
+  vertical-align: middle;
+  width: 30px;
+}
+
+.qq-upload-button > div {
+  padding-top: 6px;
+}
+
+.qq-upload-button {
+  width: 130px;
+  background: none;
+}
+#NewFile {
+    margin-bottom:10px;
+}
+.ui-sortable li:hover {
+    background-color:#333;
+}
+@media screen and (max-width: 1350px) {
+    #Logo {
+        width:auto;
+    }
+}
+@media screen and (max-width: 899px) {
+
+    img {
+        max-width: 100%;
+	    height: auto;
+	    width: auto\9; /* ie8 */
+    }    
+
+    .BasicTiles, #RSSTileContainer {
+        float: none;
+        width: auto;
+    }
+    #ServiceTiles {
+        width:auto;
+        min-width:0;
+    }
+    .ServiceTile {
+        height:25%;
+        width:32%;
+        min-height:175px;
+        max-height:175px;
+        min-width:120px;
+    }
+    #BottCred {
+        font-size: .5em;
+        padding: 5px;
+        position: static;
+    }
+    .StdLabel {
+        float: none;
+        padding: 1% 0;
+        text-align: left;
+        width: auto;
+    }
+    .Action input {
+        margin-left:0;
+    }
+    .BasicForm input[type="text"] {
+        font-size:1.5em;
+    }
+    #Logo img {
+        border: 0 none;
+        width: 35%;
+    }
+    #BigLogo img#DigiLogo {
+        width: 64.667%;
+    }
+    .BasicMenu {width:50%;}
+    #KeyMessages span {
+        font-size: 0.5em;
+    }
+    #ServiceTiles, #Body, #WhatWeDo p {  
+        min-width:0;
+        width:auto;
+    }
+    .BasicTiles {
+        float:none;
+        width:auto;
+    }
+    #RSSTileContainer {
+        float:none;
+        width:auto;
+        margin-top:5%;
+    }
+    .ClearFloatManual {
+        clear:both;
+    }
+    h1.PageTitle {
+        font-size: 1.3em;
+        margin: 1em 0;
+    }
+    #SocialLinks {
+        margin: 10px auto 0;
+        width: 30%;
+        float:none;
+        position:static;
+    }
+    #KeyMessages {
+        padding: 1% 0 4%;
+    }
+    .WPScroll {
+        margin: 0 auto;
+        min-width: 0;
+        padding: 3%;
+        position: relative;
+        text-align: left;
+        width: auto;
+    }
+    .WPScroll ul {
+        padding-left:5%;
+        margin-left:5%;
+    }
+    .WPScroll h1 {
+        font-size:1.8em;
+    }
+    .WPScroll h2 {
+        font-size:1.3em;
+    }  
+    .C1, .C2 {
+        float:none;
+        width:auto;
+    }
+    .SmallLogo img {
+        top:12px;
+        background-size:65%;
+    }    
+}
+
+/* iPads (landscape) ----------- */
+@media screen and (max-width: 650px) {
+    .ServiceTile {
+       height:25%;
+       width:48%;
+       max-height:120px;
+       min-height:120px;
+    } 
+    .ServiceTile div.ServiceImage {
+       padding-top:5%;
+    }
+    .ServiceTile div.ServiceImage img {
+        width: 50%;
+    }    
+    .STPeople {
+       width:64% !important;
+    }
+    #RSSTileContainer {
+        padding: 1% 0;
+    }
+    .TwoCol .LeftPane, .TwoCol .RightPane {
+        float: none;
+        width:auto;
+    } 
+    .ContactAddress {
+        padding:0 0 10% 0;
+    }
+    .StdInput input, .StdInput textArea {
+        width:90%;
+    }
+    .FlowRow {
+        float:none;
+    }
+    .BasicMenu {
+        width: 60%;
+    }
+    #Logo {
+        width: auto;
+    }
+    .Peeps {
+        display:none;
+    }
+}
+
+@media screen and (max-width: 490px) {
+
+    .ServiceTile div.ServiceImage {
+       padding-top:11%;
+    }
+    .ServiceTile div.ServiceImage img {
+        width: 68%;
+    }
+    .ServiceTile {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 319px) {
+
+    .ServiceTile div.ServiceImage {
+       padding-top:7%;
+    }
+    .ServiceTile div.ServiceImage img {
+        width: 50%;
+    } 
+    .ServiceTile {
+        float: none;
+        width: auto;
+        min-height: 145px;
+    }
+    .ServiceTile div.ServiceText {
+        font-size: 1.5em;
+    }
+    .BasicMenu {
+        width: 75%;
+    }    
+}
+
+/* Slider */
+.triangle-right.left:after {
+    border-color: transparent #0098E8;
+    border-width: 15px 40px 0 0;
+    bottom: auto;
+    left: -40px;
+    top: 16px;
+}
+.triangle-right:after {
+    border-color: #0098E8 transparent;
+    border-style: solid;
+    border-width: 20px 0 0 20px;
+    bottom: -20px;
+    content: "";
+    display: block;
+    left: 50px;
+    position: absolute;
+    width: 0;
+}
+.triangle-right.left {
+    background: none repeat scroll 0 0 #0098E8;
+    margin-left: 40px;
+}
+.triangle-right {
+    background: linear-gradient(#2E88C4, #075698) repeat scroll 0 0 transparent;
+    /*border-radius: 10px 10px 10px 10px;*/
+    color: #FFFFFF;
+    margin: 1em 0 3em;
+    padding: 15px;
+    position: relative;
+}
+.ui-widget {
+  font-family: inherit;
+  font-size: 0.9em;
+}
+.ui-widget-content {
+    background-color: transparent;
+    border: 1px solid #333;
+}
+.ui-widget-content {
+    color: #fff;
+}
+.ui-widget-header {
+  border: 1px solid #333;
+  color: #222222;
+  font-weight: bold;
+  background-color: #191919;
+}
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
+  color: #999999;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  background-color: #222;
+  border: 1px solid #333;
+  color: #555555;
+  font-weight: normal;
+}
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+  color: #fff;
+  background-color:transparent;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+  border: 1px solid #333;
+  color: #fff;
+  background-color: #000;
+  font-weight: 700;
+}
+.ui-slider .ui-slider-handle {
+  background-color: #FFFFFF !important;
+}

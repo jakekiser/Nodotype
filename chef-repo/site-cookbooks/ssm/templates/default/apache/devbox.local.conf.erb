@@ -1,0 +1,15 @@
+<VirtualHost *:80>
+	ServerName devbox.local
+	ServerAlias *.devbox.local
+	ServerAlias www.*.devbox.local
+
+	VirtualDocumentRoot /var/www/%2.0.%3.0/%1/web
+
+	<Directory /var/www/>
+		AllowOverride All
+	</Directory>
+
+	<Directory />
+		AllowOverride All
+	</Directory>
+</VirtualHost>

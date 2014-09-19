@@ -1,0 +1,194 @@
+.ClearFloat {
+  clear: both;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+#_DAEditingMenu div {
+  background-color: #333333;
+  border: 1px solid #555555;
+  font-size: 0.8em;
+  font-weight: 700;
+  margin-bottom: 10px;
+  padding: 5px 17px;
+  text-align:center;
+}
+#_DAEditingMenu {
+  background-color: #000;
+  color: #FFFFFF;
+  left: 0;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  z-index: 20000;
+}
+#_DAEditingMenu .ClearFloat {
+    display:none;
+}
+#_DAEditingMenu div a, #_DAEditingMenu div a:visited {
+    color:#fff;
+    text-decoration:none;
+}
+#_DAEditingMenu div:hover {
+    background-color:#00a000;
+}
+.main-header-wrap {
+  background-color: #F0F0F0 !important;
+  background-image: url("/Editor/assets/growthBG.jpg");
+  background-position: left 50%;
+}
+.main-header .nav ul li {
+  font-size: .9em;
+  font-weight: 700;
+  padding-bottom:.75%;
+}
+.main-header .nav {
+  background-color: transparent;
+}
+.main-header .nav ul li a, .main-header .nav ul li a:visited {
+  color: #000000;
+  font-size: 1.3em;
+  font-weight: 700;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+#StdMsg {
+  background-image:url('/images/TransBlue_60Pct.png'); 
+  border: 1px solid #666666;
+  color: #FFFFFF;
+  font-size: 2.5em;
+  font-weight: 700;
+  left: 10%;
+  margin: 0 auto;
+  padding: 10px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 80%;
+  z-index: 10000;
+}
+#zw-slider {
+    height: 690px;
+}
+.main-header .main-header-wrap {
+  padding: 33px 0 0 !important;
+}
+.TopOfPage {
+    display:none;
+}
+.section-block {
+  padding: 320px 0 0;
+}
+#BottCred {
+    display:none;
+}
+.main-header .brand img {
+  max-height: inherit;
+}
+.main-header #nav-toggle {
+  display: none;
+}
+.main-header .brand {
+  margin-bottom: 40px;
+}
+.main-header .main-header-wrap .brand {
+  margin: 0 0 10px !important;
+  height:auto !important;
+}
+.StdXPage {
+  padding: 0 20px;
+}
+#XPage_116 {display:none;}
+.lead {
+  margin-bottom: 14px;
+}
+.main-header .nav {
+  background-image: url('/Editor/assets/TransWht40Pct.png');
+  margin: 35px 0 0;
+  padding-top: 1%;
+}
+#XPage_120 {
+  padding: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+}
+.main-header .nav ul li a {
+  border-bottom: 1px solid transparent;
+  color: #444444;
+  display: inline-block;
+  line-height: 1;
+  outline: medium none;
+  text-decoration: none;
+  font-family: arial;
+  cursor:pointer;
+}
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+  color: #333;
+}
+body {
+  color: #333;
+}
+.service .title {
+  text-align: center;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #333333;
+}
+#XPage_121 {
+  background-color: #000000;
+  bottom: 0;
+  color: #FFFFFF;
+  font-size: 0.8em;
+  line-height: 1em;
+  opacity: 0.8;
+  padding-top: 10px;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
+#XPage_121 a, #XPage_121 a:visited {
+  color: #FFFFFF;
+  margin-left: 0.5%;
+}
+.Legal {
+  margin-right: 2%;
+}
+.main-header .main-header-wrap {
+  border:0;
+}
+.SocialIcons {
+  background-color: #1772B9;
+  border-radius: 66% 66% 66% 66%;
+  display: inline-block;
+  margin-left: .25%;
+  padding: 2px 5px;
+  width: 16px;
+  opacity:.7;
+}
+.SocialIcons:hover {
+  opacity:1;
+}
+.SocialIcons img {
+  height: 100%;
+}
+#growthImg  {
+  width:25% !important;
+}
+body {
+  color: #666666;
+  font-family: 'nexa_lightregular',Arial,Helvetica,sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+}
+@media screen and (max-width: 899px) {
+  .SocialIcons {
+    display:none;
+  }
+  #XPage_121, #XPage_120 {
+    position:static;
+  }
+  .section-block {
+    padding: 20px 0 0;
+  }
+}
