@@ -3,9 +3,6 @@ var User = (function () {
         this.name = name;
         this.email = email;
         this.id = id;
-        this.name = name;
-        this.email = email;
-        this.id = id;
     }
     User.prototype.getName = function () {
         return this.name;
