@@ -1,4 +1,4 @@
-var User = (function () {
+exports.User = (function () {
     function User(name, email, id) {
         this.name = name;
         this.email = email;
@@ -17,5 +17,4 @@ var User = (function () {
     };
     return User;
 })();
-exports.User = User;
 //# sourceMappingURL=User.js.map
